@@ -17,7 +17,7 @@
      - Return to **Settings** -> **Bindings** -> **Add** and select **Analytics engine**.
      - Bind the variable name `ANALYTICS` to the `sink` dataset.
 
-7. Add Compatibility flags (**Note**: The `wrangler.toml` configuration file already includes the `nodejs_compat` flag. If your deployment still fails with Node.js module errors, you may need to manually set the flag in the dashboard.)
-   - Go to **Settings** -> **Runtime** -> **Compatibility flags** and set the following flags `nodejs_compat`.
+7. **Compatibility flags**: The `wrangler.toml` configuration file already includes the `nodejs_compat` flag, so manual configuration is typically not required. If your deployment fails with Node.js module errors (e.g., "No such module node:buffer"), manually set the flag in the dashboard:
+   - Go to **Settings** -> **Runtime** -> **Compatibility flags** and add `nodejs_compat`.
 8. Redeploy the project.
 9. To update code, refer to the official GitHub documentation [Syncing a fork branch from the web UI](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork#syncing-a-fork-branch-from-the-web-ui 'GitHub: Syncing a fork').
