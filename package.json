@@ -19,7 +19,7 @@
     "dev": "nuxt dev",
     "deploy": "npm run deploy:pages",
     "deploy:pages": "wrangler pages deploy dist",
-    "deploy:worker": "wrangler deploy",
+    "deploy:worker": "wrangler deploy -c wrangler.jsonc",
     "preview": "wrangler dev --var $(cat .env | sed 's/=/:/g')",
     "test": "vitest"
   },
